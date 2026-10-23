@@ -1,0 +1,545 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #fff5f7;
+    color: #3d0710;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* NAVBAR */
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    background: rgba(255, 245, 247, 0.92);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #f0c5d2;
+}
+
+nav {
+    max-width: 1100px;
+    margin: auto;
+    padding: 18px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+    color: #6b0f1a;
+}
+
+.menu {
+    display: flex;
+    gap: 28px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #6b0f1a;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #d47796;
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 120px 20px 80px;
+
+    background:
+        radial-gradient(circle at 20% 30%, #f8d7e3 0%, transparent 25%),
+        radial-gradient(circle at 80% 70%, #efd0d9 0%, transparent 25%),
+        #fff5f7;
+}
+
+.coracoes {
+    font-size: 28px;
+    color: #8c1c2d;
+    letter-spacing: 15px;
+    margin-bottom: 20px;
+}
+
+.pequeno {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 11px;
+    color: #a85c70;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(70px, 11vw, 130px);
+    line-height: 0.8;
+    font-weight: 600;
+    color: #6b0f1a;
+}
+
+.hero h1 span {
+    color: #d47796;
+    font-size: 0.7em;
+}
+
+.subtitulo {
+    margin-top: 35px;
+    color: #75434e;
+    line-height: 1.8;
+    font-size: 14px;
+}
+
+.botao {
+    margin-top: 35px;
+    padding: 14px 30px;
+    border-radius: 30px;
+    background: #6b0f1a;
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background: #8c1c2d;
+    transform: translateY(-3px);
+}
+
+
+/* SEÇÕES */
+
+.secao {
+    max-width: 950px;
+    margin: auto;
+    padding: 120px 30px;
+    text-align: center;
+}
+
+.label {
+    font-size: 10px;
+    letter-spacing: 4px;
+    color: #c05c79;
+    margin-bottom: 15px;
+}
+
+.secao h2,
+.carta h2,
+.final h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 55px;
+    color: #6b0f1a;
+    font-weight: 600;
+}
+
+.linha {
+    width: 50px;
+    height: 2px;
+    background: #d47796;
+    margin: 25px auto;
+}
+
+.texto {
+    max-width: 650px;
+    margin: 25px auto;
+    color: #70434d;
+    font-size: 14px;
+    line-height: 2;
+}
+
+
+/* DATA */
+
+.data {
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: #6b0f1a;
+}
+
+.data > span {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 90px;
+    line-height: 0.8;
+}
+
+.data div {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.data strong {
+    font-size: 16px;
+    letter-spacing: 3px;
+}
+
+.data small {
+    color: #c05c79;
+}
+
+
+/* CARTA */
+
+.carta {
+    padding: 120px 30px;
+    background: #3d0710;
+    color: #fff5f7;
+    text-align: center;
+}
+
+.carta-conteudo {
+    max-width: 700px;
+    margin: auto;
+}
+
+.carta .label {
+    color: #e8a6bb;
+}
+
+.carta h2 {
+    color: #f7c6d9;
+    margin-bottom: 45px;
+}
+
+.carta p {
+    color: #f7dce4;
+    line-height: 2;
+    font-size: 14px;
+    margin: 25px 0;
+}
+
+.carta .assinatura {
+    margin-top: 50px;
+    color: #f7c6d9;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+}
+
+
+/* CARDS */
+
+.cards {
+    margin-top: 55px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    padding: 35px 25px;
+    background: #ffffff;
+    border: 1px solid #f0ccd7;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(107, 15, 26, 0.08);
+}
+
+.card span {
+    font-size: 30px;
+    color: #9b2438;
+}
+
+.card h3 {
+    margin: 15px 0;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 27px;
+    color: #6b0f1a;
+}
+
+.card p {
+    color: #76515a;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+
+/* FINAL */
+
+.final {
+    padding: 120px 30px;
+    text-align: center;
+    background: #f7c6d9;
+}
+
+.final .coracao {
+    font-size: 45px;
+    color: #6b0f1a;
+    margin-bottom: 20px;
+}
+
+.final h2 {
+    color: #6b0f1a;
+}
+
+.final p {
+    max-width: 500px;
+    margin: 20px auto;
+    color: #6b3641;
+    line-height: 1.8;
+    font-size: 14px;
+}
+
+.final span {
+    display: block;
+    margin-top: 30px;
+    color: #8c1c2d;
+    font-size: 25px;
+}
+
+
+/* FOOTER */
+
+footer {
+    padding: 25px;
+    text-align: center;
+    background: #18090d;
+    color: #d9a8b5;
+    font-size: 11px;
+}
+
+
+/* CELULAR */
+
+@media (max-width: 700px) {
+
+    .menu {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 75px;
+    }
+
+    .secao h2,
+    .carta h2,
+    .final h2 {
+        font-size: 42px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .data > span {
+        font-size: 70px;
+    }
+}
+
+/* ===== CONTADOR ===== */
+
+.contador {
+    width: 100%;
+    padding: 120px 30px;
+    text-align: center;
+    background-color: #fff5f7;
+}
+
+.contador h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 55px;
+    color: #6b0f1a;
+    margin-bottom: 50px;
+}
+
+/* Caixinhas do contador */
+.tempo {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.tempo div {
+    width: 140px;
+    padding: 25px 15px;
+
+    text-align: center;
+
+    background-color: #ffffff;
+
+    border: 1px solid #f0ccd7;
+    border-radius: 15px;
+
+    box-shadow: 0 10px 30px rgba(107, 15, 26, 0.08);
+
+    transition: 0.3s;
+}
+
+.tempo div:hover {
+    transform: translateY(-5px);
+}
+
+/* Números */
+.tempo span {
+    display: block;
+
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 48px;
+    font-weight: 600;
+
+    color: #6b0f1a;
+}
+
+/* dias / horas / minutos / segundos */
+.tempo p {
+    margin-top: 5px;
+
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: #c05c79;
+}
+
+/* "e contando..." */
+.contando {
+    margin-top: 35px;
+
+    text-align: center;
+
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+
+    color: #a85c70;
+}
+
+/* ===== SURPRESA ===== */
+
+.surpresa {
+    padding: 120px 30px;
+    text-align: center;
+    background: #f7c6d9;
+}
+
+.surpresa h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 55px;
+    color: #6b0f1a;
+    margin-bottom: 35px;
+}
+
+/* BOTÃO */
+
+#botaoCarta {
+    border: none;
+    padding: 15px 30px;
+
+    background: #6b0f1a;
+    color: white;
+
+    border-radius: 30px;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+#botaoCarta:hover {
+    background: #8c1c2d;
+    transform: translateY(-3px);
+}
+
+/* CARTA ESCONDIDA */
+
+.carta-secreta {
+    max-width: 650px;
+
+    margin: 35px auto 0;
+
+    padding: 45px;
+
+    background: #fff5f7;
+
+    border: 1px solid #e7aabd;
+    border-radius: 18px;
+
+    box-shadow: 0 15px 40px rgba(107, 15, 26, 0.12);
+
+    /* começa escondida */
+    display: none;
+
+    animation: aparecerCarta 0.6s ease;
+}
+
+.carta-secreta h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 35px;
+    color: #6b0f1a;
+
+    margin: 15px 0 25px;
+}
+
+.carta-secreta p {
+    color: #70434d;
+
+    font-size: 14px;
+    line-height: 2;
+
+    margin: 20px 0;
+}
+
+.coracoes-surpresa {
+    color: #8c1c2d;
+    font-size: 25px;
+    letter-spacing: 8px;
+}
+
+.assinatura-surpresa {
+    display: block;
+
+    margin-top: 30px;
+
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 24px;
+
+    color: #6b0f1a;
+}
+
+/* ANIMAÇÃO */
+
+@keyframes aparecerCarta {
+
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
